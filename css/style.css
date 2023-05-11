@@ -1,108 +1,221 @@
-body {
-    background-image: url(../assets/banner.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.titulo {
-    font-size: 30px;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 30px 20px 30px 20px;
-    border: solid 3px white;
+body {
+    background-color: rgba(105, 144, 148, 0.811);
 }
 
 header {
-    background-color: #578f579a;
+    display: grid;
+    place-items: center;
+    padding-bottom: 0, 3rem;
+    margin: 3, 125rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.presentacion {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 30px;
-    padding: 35px;
-    font-size: 15px;
-    text-decoration: underline;
-    text-align: right;
-    height: 50px;
-    padding: 35px;
-}
-
-.terapia1 {
-    text-align: left;
+nav {
     display: flex;
-    padding: 35px;
-    height: 50px;
-    width: 50px;
+    justify-content: center;
+    padding: 5, 6rem;
+    width: 100%;
+    margin-top: 25rem;
 }
 
-.terapia2 {
+.navbar {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    font-size: 3rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li {
+    margin-right: 15rem;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.titulo h1 {
+    background-color: rgba(250, 235, 215, 0.755);
+    margin-top: 12.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo h2 {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    font-size: 40px;
+    padding: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.imagen-titulo {
+    background-color: rgba(250, 235, 215, 0.755);
     display: flex;
-    padding: 35px;
-    height: 50px;
-    width: 50px;
+    justify-content: center;
+    padding: 300px;
+    margin-top: 300px;
 }
 
-.terapia3 {
-    text-align: right;
+.imagen-titulo h3 {
     display: flex;
-    padding: 35px;
-    height: 50px;
-    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px 0px 100px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.inicio {
-    padding: 80px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    font-family: 'Montserrat', sans-serif;
 }
 
-.quien-soy {
-    padding: 80px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.caja1 {
+    background-color: rgba(250, 235, 215, 0.755);
+    margin: 200px;
+    padding: 50px;
+    border: 1px black solid;
+    text-align: center;
+    align-items: center;
 }
 
-.opiniones {
-    padding: 80px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.caja1 h2 {
+    width: 100%;
+    color: black;
+    padding-block-end: 100px;
+    font-size: 350%;
 }
 
-.tarifas {
-    padding: 80px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.caja1 p {
+    color: black;
+    font-size: 170%;
+    text-align: center;
 }
 
-.reserva-tu-cita {
-    padding: 80px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.caja1 ul {
+    font-size: 170%;
+    text-align: left;
 }
 
-.contacto {
-    padding: 80px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.caja1 li {
+    padding: 50px;
 }
 
-.photo1 {
-    background-image: url(../assets/photo1.jpeg);
-    background-repeat: no-repeat;
-    padding: 80px;
-    height: 80px;
-    width: 80px;
+.span li {
+    font-size: 30px;
 }
 
-.photo2 {
-    background-image: url(../assets/photo2.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 80px;
-    height: 80px;
-    width: 80px;
+.container2 {
+    display: grid;
+    grid-template-rows: repeat(2, 70% 30%);
+    font-family: 'Montserrat', sans-serif;
 }
 
-.photo3 {
-    background-image: url(../assets/photo3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 80px;
-    height: 80px;
-    width: 80px;
+.manos {
+    background-color: white;
+    width: 100%;
+    height: 125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.manos img {
+    width: 100%;
+    height: 120rem;
+}
+
+.manos h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem;
+    font-size: 3rem;
+    color: rgb(199, 103, 68);
+}
+
+.manos p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manos button {
+    padding: 0.8rem 1.5rem;
+    font-size: 3rem;
+    background-color: rgb(199, 103, 68);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.iconos {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    margin: 200px;
+}
+
+.iconos a {
+    display: block;
+    text-align: center;
+}
+
+.instagram-icono {
+    width: 8rem;
+    height: 8rem;
+}
+
+.facebook-icono {
+    width: 8rem;
+    height: 8rem;
+}
+
+.whatsapp-icono {
+    width: 8rem;
+    height: 8rem;
+}
+
+
+@media (max-width: 600px) {
+
+    .titulo h1 {
+        font-size: 60px;
+    }
+
+    .imagen-titulo {
+        padding: 30px;
+    }
+
+    .navbar {
+        gap: 20px;
+        font-size: 30px;
+    }
 }

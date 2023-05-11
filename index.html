@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head> <!--meta informacion-->
     <meta charset="UTF-8">
@@ -9,81 +9,86 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1 class="titulo">Psicóloga Valentina Gonzalez Glena</h1>
+    <header class="encabezado">
         <nav>
-            <span class="inicio">Inicio</span>
-            <span class="quien-soy">¿Quien soy?</span>
-            <span class="opiniones">Opiniones</span>
-            <span class="tarifas">Tarifas</span>
-            <span class="reserva-tu-cita">Reserva tu cita</span>
-            <span class="contacto">Contacto</span>
-            <form>
-                <label class="buscador" for=""></label>
-                <input type="search">
-            </form>
+            <ul class="navbar">
+                <li><a href="../valen - editable/index.html">Inicio</a></li>
+                <li><a target="_blank" href="./pages/quienSoy.html">¿Quién soy?</a></li>
+                <li><a target="_blank" href="./pages/Blog.html">Blog</a> </li>
+                <li><a target="_blank" href="./pages/Tarifas.html"> Tarifas</a></li>
+                <li><a target="_blank" href="https://wa.me/+56978646916">Reserva tu cita </a></li>
+                <li><a target="_blank" href="./pages/Contacto.html">Contacto </a></li>
+            </ul>
         </nav>
+    </header>
 
-
-    </header> <!--encabezado-->
     <main>
-        <h1 class="presentacion">¡Hola! Soy Valentina Gonzalez. Psicóloga chilena, radicada en Barcelona. Realizo
-            sesiones en modalidad online y presencial, en castellano e inglés.
-            Máster en Arteterapia</h1>
-        <ul>
-            <div class="photo1">
-                <section class="terapia1"> Terapia para adultos </section>
+        <div class="titulo">
+            <h1>¡Hola! Soy Valentina González Glena.</h1>
+            <h2> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas voluptatem, aliquid aut
+                praesentium dolorem architecto, perferendis sit, culpa assumenda et dicta quidem velit amet deserunt
+                dolor maxime officia inventore?</h2>
+        </div>
+        <div class="imagen-titulo">
+            <img src="./assets/valen-ceramica.jpeg" alt="valentina-ceramica">
+            <h3>También soy ceramista, tengo un máster en arte-terapia, realizado en Metáfora (Barcelona,España)</h3>
+        </div>
+        <div class="container">
+            <div class="caja1">
+                <h2>¿Qué esperar en mis sesiones?</h2>
+                <p>Mi objetivo en la terapia es ayudar a las personas de todas las edades a vivir una vida más feliz,
+                    más
+                    saludable y más productiva.
+                    Mediante el uso de varios métodos de psicoterapia y medidas de tratamiento, mis pacientes
+                    desarrollan
+                    hábitos que les ayuden a enfrentar cualquier obstáculo de su vida. Ya son más de 100 personas y sus
+                    familias a las que he ayudado a superar momentos difíciles y dificultades personales.
+                    Mis sesiones están orientadas a examinar problemas personales y proporcionar a los pacientes las
+                    herramientas y técnicas que les permitan gestionar sus emociones y superar las dificultades por las
+                    que
+                    están pasando. Así como a lograr un mayor conocimiento de si mismos. </p>
             </div>
-            <div class="photo2">
-                <section class="terapia2"> Terapia para parejas </section>
+            <div class="caja1">
+                <h2>Servicios que ofrezco:</h2>
+                <ul>
+                    <li>Terapia individual</li>
+                    <li>Terapia de pareja</li>
+                    <li>Terapia familiar</li>
+                    <li>Terapia para adolescentes</li>
+                    <li>Servicio especializado en T.E.A.</li>
+                </ul>
             </div>
-            <div class="photo3">
-                <section class="terapia3"> Terapia para niños </section>
+        </div>
+        <div class="container2">
+            <div class="manos">
+                <h3> Estoy aqui para ayudarte, si quieres reservar una cita para una sesión</h3>
+                <p><button>Haz click aquí</button></p>
+                <img src="./assets/manos.svg" alt="manos">
             </div>
-        </ul>
+        </div>
 
-    </main> <!--informacion importante de la pagina-->
-
-    <br>
-    <a target="_blank" href="https://www.instagram.com/psi_valentinagonzalezg/?hl=es"> Si quieres ver más contenido, haz
-        click aqui</a>
-    <form action="/formulario" method="">
-        <label for="Nombre">Nombre</label>
-        <input id="nombre" name="Nombre" placeholder="Nombre" />
-        <br>
-        <label for="teléfono">Teléfono</label>
-        <input id="Teléfono" name="Teléfono" placeholder="Teléfono" required />
-        <br>
-
-        <label for="Contraseña">Contraseña</label>
-        <input type="password" id="Contraseña" name="Contraseña" placeholder="Contraseña" />
-        <br>
-        <label for="Consulta">Consulta</label>
-        <textarea cols="100" rows="10" id="Consulta" name="Consulta" placeholder="Consulta" name="Consulta"></textarea>
-    </form>
-
-    <input type="submit" enviar datos />
-
-    <aside>
-
-    </aside> <!--publicidad-->
+    </main>
 
     <footer>
-
-    </footer> <!--pie de pagina-->
-
-    <section>
-
-    </section> <!--declara secciones del proyecto-->
-
-    <article>
-
-    </article> <!-- contiene info de tipo periodistica, para blogs, relacionado a informacion-->
+        <div class="iconos">
+            <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram-icono">
+                <img class="instagram-icono" src="./assets/instagram.png" alt="icono-instagram"> </a>
+            <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook-icono">
+                <img class="facebook-icono" src="./assets/facebook.png" alt="icono-facebook"></a>
+            <a href="https://www.flaticon.es/iconos-gratis/marketing" title="whatsapp-icono">
+                <img class="whatsapp-icono" src="./assets/whatsapp.png" alt="icono-whatsapp"></a>
+        </div>
+    </footer>
 
 </body>
+
+<footer>
+
+</footer>
 
 </html>
